@@ -12,15 +12,14 @@ describe('PlatziPunk Contract', () => {
             deployed,
         };
     };
-    describe('Deployment', () => {
+    describe("Deployment", () => {
         it("Sets max supply to passed param", async () => {
-            const maxSupply = 10000;
-
-            const { deployed } = await setup({ maxSupply });
-
-            const returnedMaxSupply = await deployed.maxSupply();
-            expect(maxSupply).to.equal(returnedMaxSupply);
-
+          const maxSupply = 10000;
+    
+          const { deployed } = await setup({ maxSupply });
+    
+          const returnedMaxSupply = await deployed.maxSupply();
+          expect(maxSupply).to.equal(returnedMaxSupply);
         });
     });
 

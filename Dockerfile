@@ -1,8 +1,8 @@
 FROM node:14.21
 WORKDIR /code
 RUN chmod 777 /code
-COPY ["package.json","init.sh", "./"]
-RUN npm install
+# COPY ["package.json","init.sh", "./"]
+# RUN npm install
 # RUN chmod 777 /code
 # RUN yarn add hardhat -D
 # RUN yarn add dotenv -D
